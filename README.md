@@ -41,36 +41,9 @@ project-root/
 ---
 
 ## 🚀 Setup Instructions
-
-1. Install Apache Airflow
-
-Follow the official [Airflow Installation Guide](https://airflow.apache.org/docs/apache-airflow/stable/installation/index.html)
-
-Example using `pip`:
-
-pip install apache-airflow==2.9.1 \
-  --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.9.1/constraints-3.8.txt"
-
 2. Clone This Repository
 git clone https://github.com/your-username/etl-toll-data-airflow.git
 cd etl-toll-data-airflow
-
-3. Copy DAG to Airflow
-# Linux/Mac
-cp dags/etl_toll_pipeline.py ~/airflow/dags/
-
-# Windows (default Airflow Home for Astronomer or custom setups)
-copy dags\etl_toll_pipeline.py C:\airflow-astro\dags\
-
-4. Start Airflow
-airflow db init
-airflow scheduler
-airflow webserver --port 8080
-Open Airflow UI at: http://localhost:8080
-Enable the DAG named ETL_toll_data.
-
-5. Trigger the DAG
-Trigger the DAG manually from the UI or wait for its daily schedule.
 
 📦 Dependencies
 Install required Python libraries using:
