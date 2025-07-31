@@ -21,9 +21,7 @@ All tasks are managed using Airflow’s modern `@dag` and `@task` decorators, an
 
 ---
 
-## 📁 Directory Structure
-
-<pre> ``` project-root/ ├── dags/ │ ├── etl_toll_pipeline.py # Main Airflow DAG │ └── staging/ # Staging folder for all data files │ ├── vehicle-data.csv │ ├── tollplaza-data.tsv │ ├── payment-data.txt │ ├── csv_data.csv │ ├── tsv_data.csv │ ├── fixed_width_data.csv │ ├── extracted_data.csv │ └── transformed_data.csv ├── requirements.txt └── README.md ``` </pre>
+<pre><code> ## 📁 Directory Structure ``` project-root/ ├── dags/ │ ├── etl_toll_pipeline.py # Main Airflow DAG │ └── staging/ # Staging folder for all data files │ ├── vehicle-data.csv │ ├── tollplaza-data.tsv │ ├── payment-data.txt │ ├── csv_data.csv │ ├── tsv_data.csv │ ├── fixed_width_data.csv │ ├── extracted_data.csv │ └── transformed_data.csv ├── requirements.txt └── README.md ``` </code></pre>
 
 ---
 
