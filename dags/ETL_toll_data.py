@@ -18,7 +18,7 @@ FW_FILE = os.path.join(STAGING_PATH, "payment-data.txt")
 @dag(
     dag_id='ETL_toll_data',
     start_date=datetime(2025, 1, 1),
-    schedule='@daily',           # ✅ use `schedule` instead of `schedule_interval`
+    schedule='@daily',    
     catchup=False,
     default_args={
         'owner': 'Mohammed',
